@@ -1,0 +1,7 @@
+prefix: '&eCustomText &6&l> &f'
+
+loaded-commands: 'Loaded &b[amount] &ecommands from config.'
+plugin-enabled: 'Plugin enabled successfully.'
+plugin-disabled: 'The plugin has been disabled.'
+
+config-failed-to-save: '&cThe config &e[config-name] &cfailed to save (IOException).'

@@ -1,0 +1,13 @@
+name: CustomText
+version: 1.0
+main: me.sulphate.customtext.CustomText
+author: Sulphate
+
+commands:
+  customtext:
+    description: Lists or modifies existing CustomText commands.
+    usage: /<command> <list/add/delete/reload> [command-name] [..lines]
+
+permissions:
+  customtext.admin:
+    default: op

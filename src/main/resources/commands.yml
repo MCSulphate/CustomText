@@ -1,0 +1,4 @@
+example-command:
+  - 'This is an example command!'
+  - 'You can use colour codes, like &ethis&f!'
+  - 'You may add as many lines as you need.'
