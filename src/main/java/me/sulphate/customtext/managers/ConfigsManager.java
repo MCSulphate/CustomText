@@ -11,27 +11,27 @@ import java.util.HashMap;
 public class ConfigsManager {
 
     private HashMap<String, FileConfiguration> configs;
+    private final String[] CONFIG_NAMES = { "commands.yml", "messages.yml" };
 
     /**
      * Loads all configs from the file system.
      */
     public ConfigsManager() {
         configs = new HashMap<>();
-        String[] configNames = { "commands.yml", "messages.yml" };
 
-        for (String configName : configNames) {
+        for (String configName : CONFIG_NAMES) {
             configs.put(configName, ConfigUtils.loadConfig(configName));
         }
     }
 
     /**
-     * Reloads a config from the file system.
-     *
-     * @param configName The filename of the config to reload.
+     * Reloads all configs from the file system.
      */
-    public void reloadConfig(String configName) {
-        configs.remove(configName);
-        configs.put(configName, ConfigUtils.loadConfig(configName));
+    public void reloadConfigs() {
+        for (String configName : CONFIG_NAMES) {
+            configs.remove(configName);
+            configs.put(configName, ConfigUtils.loadConfig(configName));
+        }
     }
 
     /**

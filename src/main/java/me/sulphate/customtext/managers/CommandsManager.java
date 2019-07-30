@@ -4,6 +4,7 @@ import org.bukkit.configuration.file.FileConfiguration;
 
 import java.util.HashMap;
 import java.util.List;
+import java.util.Set;
 
 /**
  * Manages loaded custom commands.
@@ -75,6 +76,15 @@ public class CommandsManager {
     public void removeCommand(String commandName) {
         commands.remove(commandName);
         configsManager.setConfigValue("commands.yml", commandName, null);
+    }
+
+    /**
+     * Returns a set of command names for CustomText commands.
+     *
+     * @return The set of command names.
+     */
+    public Set<String> getCommandNames() {
+        return commands.keySet();
     }
 
 }

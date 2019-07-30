@@ -24,6 +24,12 @@ public class Messages {
     public static String NO_PERMISSION;
     public static String COMMAND_ADDED;
     public static String COMMAND_REMOVED;
+    public static String CONFIGS_RELOADED;
+    public static String LIST_MESSAGE;
+    public static String LIST_MESSAGE_FORMAT;
+    public static String COMMAND_DOES_NOT_EXIST;
+    public static String COMMAND_ALREADY_EXISTS;
+    public static String INVALID_COMMAND;
 
     /**
      * Reloads all messages from the messages.yml config.
@@ -42,10 +48,16 @@ public class Messages {
 
         CONFIG_FAILED_TO_SAVE = PREFIX + getAndColourise("config-failed-to-save", config);
 
-        NOT_ENOUGH_ARGS = getAndColourise("not-enough-args", config);
-        NO_PERMISSION = getAndColourise("no-permission", config);
-        COMMAND_ADDED = getAndColourise("command-added", config);
-        COMMAND_REMOVED = getAndColourise("command-removed", config);
+        NOT_ENOUGH_ARGS = PREFIX + getAndColourise("not-enough-arguments", config);
+        NO_PERMISSION = PREFIX + getAndColourise("no-permission", config);
+        COMMAND_ADDED = PREFIX + getAndColourise("command-added", config);
+        COMMAND_REMOVED = PREFIX + getAndColourise("command-removed", config);
+        CONFIGS_RELOADED = PREFIX + getAndColourise("configs-reloaded", config);
+        LIST_MESSAGE = PREFIX + getAndColourise("list-message", config);
+        LIST_MESSAGE_FORMAT = getAndColourise("list-message-format", config);
+        COMMAND_DOES_NOT_EXIST = PREFIX + getAndColourise("command-does-not-exist", config);
+        COMMAND_ALREADY_EXISTS = PREFIX + getAndColourise("command-already-exists", config);
+        INVALID_COMMAND = PREFIX + getAndColourise("invalid-command", config);
     }
 
     /**
