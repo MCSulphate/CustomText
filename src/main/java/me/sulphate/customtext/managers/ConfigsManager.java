@@ -35,17 +35,6 @@ public class ConfigsManager {
     }
 
     /**
-     * Returns an Object value from a config by a key path.
-     *
-     * @param configName The name of the config that contains the value.
-     * @param key        The key of the key/value pair in the config.
-     * @return           The value found, as an Object.
-     */
-    public Object getConfigValue(String configName, String key) {
-        return configs.get(configName).get(key);
-    }
-
-    /**
      * Sets a value in a config, and saves the config.
      *
      * @param configName The name of the config.

@@ -1,7 +1,16 @@
+# General Plugin Strings
 prefix: '&eCustomText &6&l> &f'
 
+# Startup/Shutdown Messages
 loaded-commands: 'Loaded &b[amount] &ecommands from config.'
 plugin-enabled: 'Plugin enabled successfully.'
 plugin-disabled: 'The plugin has been disabled.'
 
+# General Error Messages
 config-failed-to-save: '&cThe config &e[config-name] &cfailed to save (IOException).'
+
+# Command-Related Messages
+not-enough-arguments: '&cNot enough arguments.'
+no-permission: '&cYou don''t have permission to do that.'
+command-added: 'You added the command &b[command] &eto the plugin!'
+command-removed: 'You removed the command &c[command] &efrom the plugin!'

@@ -19,6 +19,12 @@ public class Messages {
     // General Error Messages
     public static String CONFIG_FAILED_TO_SAVE;
 
+    // Command-Related Messages
+    public static String NOT_ENOUGH_ARGS;
+    public static String NO_PERMISSION;
+    public static String COMMAND_ADDED;
+    public static String COMMAND_REMOVED;
+
     /**
      * Reloads all messages from the messages.yml config.
      *
@@ -35,6 +41,11 @@ public class Messages {
         PLUGIN_DISABLED = PREFIX + getAndColourise("plugin-disabled", config);
 
         CONFIG_FAILED_TO_SAVE = PREFIX + getAndColourise("config-failed-to-save", config);
+
+        NOT_ENOUGH_ARGS = getAndColourise("not-enough-args", config);
+        NO_PERMISSION = getAndColourise("no-permission", config);
+        COMMAND_ADDED = getAndColourise("command-added", config);
+        COMMAND_REMOVED = getAndColourise("command-removed", config);
     }
 
     /**

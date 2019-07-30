@@ -7,6 +7,7 @@ commands:
   customtext:
     description: Lists or modifies existing CustomText commands.
     usage: /<command> <list/add/delete/reload> [command-name] [..lines]
+    aliases: [ ctext, ct ]
 
 permissions:
   customtext.admin:
