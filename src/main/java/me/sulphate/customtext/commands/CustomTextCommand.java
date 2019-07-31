@@ -50,7 +50,7 @@ public class CustomTextCommand implements CommandExecutor {
         }
 
         if (args.length < 1) {
-            sender.sendMessage(Messages.NOT_ENOUGH_ARGS);
+            sender.sendMessage(Messages.INVALID_COMMAND);
             return true;
         }
 

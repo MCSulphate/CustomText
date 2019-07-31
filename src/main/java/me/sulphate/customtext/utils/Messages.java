@@ -15,9 +15,11 @@ public class Messages {
     public static String LOADED_COMMANDS;
     public static String PLUGIN_ENABLED;
     public static String PLUGIN_DISABLED;
+    public static String PAPI_HOOKED;
 
     // General Error Messages
     public static String CONFIG_FAILED_TO_SAVE;
+    public static String COMMAND_IN_OTHER_PLUGIN;
 
     // Command-Related Messages
     public static String NOT_ENOUGH_ARGS;
@@ -45,8 +47,10 @@ public class Messages {
         LOADED_COMMANDS = PREFIX + getAndColourise("loaded-commands", config);
         PLUGIN_ENABLED = PREFIX + getAndColourise("plugin-enabled", config);
         PLUGIN_DISABLED = PREFIX + getAndColourise("plugin-disabled", config);
+        PAPI_HOOKED = PREFIX + getAndColourise("papi-hooked", config);
 
         CONFIG_FAILED_TO_SAVE = PREFIX + getAndColourise("config-failed-to-save", config);
+        COMMAND_IN_OTHER_PLUGIN = PREFIX + getAndColourise("command-in-other-plugin", config);
 
         NOT_ENOUGH_ARGS = PREFIX + getAndColourise("not-enough-arguments", config);
         NO_PERMISSION = PREFIX + getAndColourise("no-permission", config);

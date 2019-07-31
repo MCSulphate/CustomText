@@ -1,5 +1,7 @@
 package me.sulphate.customtext.managers;
 
+import me.sulphate.customtext.utils.GeneralUtils;
+import me.sulphate.customtext.utils.Messages;
 import org.bukkit.configuration.file.FileConfiguration;
 
 import java.util.HashMap;
@@ -30,11 +32,15 @@ public class CommandsManager {
     public void reloadCommands() {
         FileConfiguration config = configsManager.getConfig("commands.yml");
 
+        int numberOfCommands = 0;
         commands = new HashMap<>();
         for (String commandName : config.getKeys(false)) {
             List<String> lines = config.getStringList(commandName);
             commands.put(commandName, lines);
+            numberOfCommands++;
         }
+
+        GeneralUtils.sendConsoleMessage(Messages.LOADED_COMMANDS.replace("[amount]", numberOfCommands + ""));
     }
 
     /**

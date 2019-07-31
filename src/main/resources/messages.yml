@@ -5,9 +5,11 @@ prefix: '&eCustomText &6&l> &f'
 loaded-commands: 'Loaded &b[amount] &fcommands from config.'
 plugin-enabled: 'Plugin enabled successfully.'
 plugin-disabled: 'The plugin has been disabled.'
+papi-hooked: 'PlaceholderAPI has been hooked.'
 
 # General Error Messages
 config-failed-to-save: '&cThe config &f[config-name] &cfailed to save (IOException).'
+command-in-other-plugin: '&6Warning: The command &c[command] &6was found in another plugin. It will not be executed.'
 
 # Command-Related Messages
 not-enough-arguments: '&cNot enough arguments.'
@@ -19,4 +21,4 @@ list-message: 'Here are the current CustomText commands:'
 list-message-format: ' &7- &f/[command]'
 command-does-not-exist: '&cThat command doesn''t exist.'
 command-already-exists: '&cThat command already exists.'
-invalid-command: '&cInvalid command. Valid arguments are &breload, list, add &cand &bremove&c.'
+invalid-command: '&cInvalid command. Valid arguments are &ereload, list, add &cand &eremove&c.'
